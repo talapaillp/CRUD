@@ -27,6 +27,9 @@ return [
     'show_grouped_errors' => true,
     'show_inline_errors' => true,
 
+    // Link to jquery.js file.
+    'jquery_src' => 'https://code.jquery.com/ui/1.11.3/jquery-ui.min.js',
+
     /*
     |------------
     | READ
@@ -386,7 +389,7 @@ return [
         // "pa" => "Punjabi",
         // "ro_MD" => "Romanian (Moldova)",
         // "ro_RO" => "Romanian (Romania)",
-        'ro' => 'Romanian',
+        // 'ro' => 'Romanian',
         // "rm_CH" => "Romansh (Switzerland)",
         // "rm" => "Romansh",
         // "rof_TZ" => "Rombo (Tanzania)",
@@ -394,7 +397,7 @@ return [
         // "ru_MD" => "Russian (Moldova)",
         // "ru_RU" => "Russian (Russia)",
         // "ru_UA" => "Russian (Ukraine)",
-        // "ru" => "Russian",
+         "ru" => "Russian",
         // "rwk_TZ" => "Rwa (Tanzania)",
         // "rwk" => "Rwa",
         // "saq_KE" => "Samburu (Kenya)",

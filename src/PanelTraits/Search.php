@@ -51,9 +51,11 @@ trait Search
         // sensible fallback search logic, if none was explicitly given
         if ($column['tableColumn']) {
             switch ($column['type']) {
-                case 'email':
                 case 'date':
                 case 'datetime':
+                    $query->orWhere($column['name'], 'like binary', '%'.$searchTerm.'%');
+                    break;
+                case 'email':
                 case 'text':
                     $query->orWhere($column['name'], 'like', '%'.$searchTerm.'%');
                     break;
