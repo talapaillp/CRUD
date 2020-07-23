@@ -57,6 +57,7 @@ trait Search
                     break;
                 case 'email':
                 case 'text':
+                case 'url':
                     $query->orWhere($column['name'], 'like', '%'.$searchTerm.'%');
                     break;
 
